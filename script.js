@@ -19,24 +19,24 @@ function stickyNav() {
 }
 
 // QUOTE ROLL-IN
-const quoteContainer = document.querySelectorAll(".quote-section-2");
+// const quoteContainer = document.querySelectorAll(".quote-section-2");
 
-window.addEventListener("scroll", checkBoxes);
+// window.addEventListener("scroll", checkBoxes);
 
-function checkBoxes() {
-  const triggerBottom = (window.innerHeight / 5) * 4;
+// function checkBoxes() {
+//   const triggerBottom = (window.innerHeight / 5) * 4;
 
-  quoteContainer.forEach((slide) => {
-    const slideTop = slide.getBoundingClientRect().top;
+//   quoteContainer.forEach((slide) => {
+//     const slideTop = slide.getBoundingClientRect().top;
 
-    if (slideTop < triggerBottom) {
-      slide.classList.remove("hide-header");
-      slide.classList.add("roll-in-right");
-    } else {
-      slide.classList.remove("roll-in-right");
-    }
-  });
-}
+//     if (slideTop < triggerBottom) {
+//       slide.classList.remove("hide-header");
+//       slide.classList.add("roll-in-right");
+//     } else {
+//       slide.classList.remove("roll-in-right");
+//     }
+//   });
+// }
 
 // CARD IMAGE FADE IN
 const cardImage = document.querySelectorAll(".card-img");

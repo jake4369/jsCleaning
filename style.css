@@ -537,6 +537,32 @@ textarea {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.38);
 }
 
+.end-logo {
+  display: block;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 1.1rem;
+  padding: 20px 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  text-shadow: 0px 0px 20px #242424;
+}
+
+small {
+  color: #fff;
+  padding-bottom: 20px;
+  text-shadow: 0px 0px 20px #242424;
+}
+
 /* ========
  ANIMATIONS
  ======== */
