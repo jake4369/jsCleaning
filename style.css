@@ -146,7 +146,8 @@ p {
 
 .modal-ul li a {
   color: #fff;
-  text-underline-offset: 10px;
+  /* text-underline-offset: 10px; */
+  text-decoration: none;
 }
 
 .modal-logo {
@@ -502,7 +503,8 @@ form {
 }
 
 input,
-textarea {
+textarea,
+select {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-size: 0.9rem;
   margin-bottom: 20px;
@@ -512,7 +514,8 @@ textarea {
   border-radius: 5px;
 }
 
-input {
+input,
+select {
   padding: 10px 5px;
 }
 

@@ -69,3 +69,13 @@ document.querySelector(".menu-btn").addEventListener("click", (e) => {
 document.querySelector(".fa-xmark").addEventListener("click", () => {
   document.querySelector(".modal").style.display = "none";
 });
+
+document.querySelectorAll(".nav-link").forEach((link) => {
+  link.addEventListener("click", () => {
+    document.querySelector(".modal").style.display = "none";
+  });
+});
+// Submit Button
+document.querySelector(".submit-btn").addEventListener("submit", (e) => {
+  e.preventDefault();
+});
