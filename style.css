@@ -229,7 +229,7 @@ HEADER
   position: relative;
   width: 100%;
   height: 79vh;
-  background-image: url(images/header-1.png);
+  background-image: url(images/header-compressed.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 70px;

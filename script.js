@@ -3,13 +3,6 @@ window.onscroll = function () {
   stickyNav();
 };
 
-window.onload = function () {
-  setTimeout(function () {
-    document.querySelector(".header").classList.remove("hide-header");
-    document.querySelector(".header").classList.add("roll-in-right");
-  }, 500);
-};
-
 // Get the navbar
 let navbar = document.querySelector(".nav");
 
