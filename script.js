@@ -3,6 +3,13 @@ window.onscroll = function () {
   stickyNav();
 };
 
+window.onload = function () {
+  setTimeout(function () {
+    document.querySelector(".header").classList.remove("hide-header");
+    document.querySelector(".header").classList.add("roll-in-right");
+  }, 500);
+};
+
 // Get the navbar
 let navbar = document.querySelector(".nav");
 
@@ -16,6 +23,47 @@ function stickyNav() {
   } else {
     navbar.classList.remove("sticky");
   }
+}
+
+// QUOTE ROLL-IN
+const quoteContainer = document.querySelectorAll(".quote-section-2");
+
+window.addEventListener("scroll", checkBoxes);
+
+function checkBoxes() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+  quoteContainer.forEach((slide) => {
+    const slideTop = slide.getBoundingClientRect().top;
+
+    if (slideTop < triggerBottom) {
+      slide.classList.remove("hide-header");
+      slide.classList.add("roll-in-right");
+    } else {
+      slide.classList.remove("roll-in-right");
+    }
+  });
+}
+
+// CARD IMAGE FADE IN
+const cardImage = document.querySelectorAll(".card-img");
+
+window.addEventListener("scroll", fadeImg);
+
+function fadeImg() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+  cardImage.forEach((img) => {
+    const slideTop = img.getBoundingClientRect().top;
+
+    if (slideTop < triggerBottom) {
+      img.classList.remove("hide-img");
+      img.classList.add("fade-in");
+    } else {
+      img.classList.remove("fade-in");
+      img.classList.add("hide-img");
+    }
+  });
 }
 
 // MODAL
